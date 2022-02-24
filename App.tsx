@@ -1,16 +1,14 @@
-import { StatusBar } from "expo-status-bar";
-import "react-native-gesture-handler";
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
-import { HomeScreen } from "./src/screens/HomeScreen";
-import { LandingScreen } from "./src/screens/LandingScreen";
+import { StyleSheet, Image } from "react-native";
+import { HomeScreen } from "./app/screens/HomeScreen";
+import { LandingScreen } from "./app/screens/LandingScreen";
 
 import { createAppContainer, createSwitchNavigator } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 import { createBottomTabNavigator } from "react-navigation-tabs";
 
 import { Provider } from "react-redux";
-import { store } from "./src/redux";
+import { store } from "./app/redux";
 
 const switchNavigator = createSwitchNavigator({
   landingStack: {

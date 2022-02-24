@@ -1,19 +1,21 @@
 import React from "react";
-import { View, Text, StyleSheet, Dimensions, Image } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
+
+import Screen from "../components/Screen";
 
 export const HomeScreen = () => {
   return (
-    <View style={styles.container}>
-      <View style={styles.navigation}>
-        <Text>Navigation</Text>
-      </View>
-      <View style={styles.body}>
-        <Text>Home Screen</Text>
-      </View>
-      <View>
+    <Screen>
+      <View style={styles.container}>
+        <View style={styles.navigation}>
+          <Text>Navigation</Text>
+        </View>
+        <View style={styles.body}>
+          <Text>Home Screen</Text>
+        </View>
         <Text>Footer</Text>
       </View>
-    </View>
+    </Screen>
   );
 };
 

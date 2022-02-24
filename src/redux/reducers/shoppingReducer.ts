@@ -1,2 +1,0 @@
-const ShoppingReducer = () => {};
-export { ShoppingReducer };
